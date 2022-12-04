@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Style the body */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #333;
+        color: #fff;
+      }
+
+      /* Style the header */
+      header {
+        padding: 20px;
+        text-align: center;
+        background-color: #444;
+      }
+
+      h1,
+      h2 {
+        font-weight: bold;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        background-color: #444;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px #222;
+      }
+
+      nav a {
+        display: block;
+        color: #fff;
+        padding: 20px;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 1.2em;
+        transition: all 0.2s;
+      }
+
+      nav a:hover {
+        color: #00b8d4;
+        background-color: #222;
+      }
+
+      nav::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #222;
+      }
+
+      nav::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 80%;
+        margin: 20px auto 0;
+        background-color: #222;
+      }
+
+      nav a::before {
+        content: "";
+        display: block;
+        height: 10px;
+        width: 10px;
+        margin: 0 auto;
+        background-color: #222;
+        border-radius: 50%;
+        margin-top: 10px;
+      }
+
+      /* Style the main content */
+      main {
+        margin-left: 20%;
+        padding: 20px;
+        margin-top: 50px;
+        box-shadow: 0 0 10px #222;
+      }
+
+      /* Style the links */
+      a {
+        color: #00b8d4;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CSC 196W</h1>
+    </header>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="A2.html">Assignment 2</a>
+      <a href="A4.html">Assignment 4</a>
+    </nav>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hi everyone, My name is Ahmed and this is my webpage for CSC 196w that will be used to show my work for the assignments. Have fun :)</p>
+        <a href="https://ibb.co/VM1czDp">
+          <img src="https://i.ibb.co/gt2LfwF/c2.jpg" alt="c2" border="0">
+        </a>
+      </section>
+      <section id="projects">
+        <h2>Favorite Activities:</h2>
+        <ul>
+          <li>Coding personal projects</li>
+          <li>Volleyball</li>
+          <li>Watching anime and movies</li>
+          <li>Reading books</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">clickMe@email.com</a>
+        </p>
+      </section>
+    </main>
+  </body>
