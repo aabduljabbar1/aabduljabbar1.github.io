@@ -7,6 +7,7 @@
         background-color: white;
         color: black;
       }
+
       .dark-color-scheme {
         background-color: black;
         color: white;
@@ -16,26 +17,20 @@
     <title>A9</title>
   </head>
   <body>
-    <h1>My Website</h1>
-
+    <h1>Assignment 9</h1>
+    <p>Select your preferred color scheme and save it to local storage. Then, when the page is loaded, it checks for the saved preference in local storage and applies the appropriate CSS styles to the page. That's the magic of cookies!</p>
     <form>
       <label>
-        <input type="radio" name="color-scheme" value="light" checked>
-        Light
-      </label>
+        <input type="radio" name="color-scheme" value="light" checked> Light </label>
       <label>
-        <input type="radio" name="color-scheme" value="dark">
-        Dark
-      </label>
+        <input type="radio" name="color-scheme" value="dark"> Dark </label>
       <button type="submit">Save</button>
     </form>
-
     <script>
       // get the form and the color scheme radio buttons
       const form = document.querySelector("form");
       const lightRadio = form.querySelector('[value="light"]');
       const darkRadio = form.querySelector('[value="dark"]');
-
       // function to save the user's color scheme preference to local storage
       function saveColorScheme() {
         // get the selected radio button
@@ -43,13 +38,11 @@
         // save the selected value to local storage
         localStorage.setItem("colorScheme", selectedRadio.value);
       }
-
       // when the form is submitted, save the user's color scheme preference
       form.addEventListener("submit", e => {
         e.preventDefault();
         saveColorScheme();
       });
-
       // when the page is loaded, apply the user's preferred color scheme
       const savedColorScheme = localStorage.getItem("colorScheme");
       if (savedColorScheme === "light") {
